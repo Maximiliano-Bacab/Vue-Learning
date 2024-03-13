@@ -1,2 +1,6 @@
 # Vue-Learning
-Se registrará el funcionamiento de vue para conocer sus características y funciones.
+
+Fecha de creación <12/03/2024>
+Desarrollador <Angel Maximiliano Gómez> 
+
+Durante este repositorio,se aprenderá el uso de VUE, como funciona y algunas especificaciones teoricas. 
