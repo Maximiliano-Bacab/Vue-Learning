@@ -62,7 +62,7 @@
 import type IUser from '@/interfaces/IUser'
 import UserService from '@/services/UserService'
 import type { Ref } from 'vue' //Interfaz de reactividad (ref)
-import { ref, computed } from 'vue' //Función de reactividad
+import { ref } from 'vue' //Función de reactividad
 
 //INGRESO DE LAS VARIABLES
 const name: Ref<string> = ref('')
@@ -133,14 +133,14 @@ const Validacion = () => {
   }
 }
 
-const MiUser: IUser = {
-  name: name.value,
-  email: email.value,
-  password: password.value,
-  group: group.value
-}
-
 const Enviar = async () => {
+  const MiUser: IUser = {
+    name: name.value,
+    email: email.value,
+    password: password.value,
+    group: group.value
+  }
+
   await Service.postUser(MiUser)
 }
 </script>
